@@ -37,6 +37,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  overflow-x: auto;
 }
 table th,
 table td {
@@ -56,15 +57,41 @@ footer {
 section p {
   margin-bottom: 10px;
   font-style: italic;
-  color: #780909;
+  color: #2c0404;
   text-size-adjust: none;
-  text-shadow: hsl(0, 86%, 22%);
+  text-shadow: hsl(0, 84%, 24%);
 }
 section h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
   text-decoration: underline;
-  color: #780909;
+  color: #360505;
   animation: normal;
+}
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-list li {
+  text-align: center;
+  flex: 1 1 calc(25% - 20px);
+}
+
+.product-list img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-list span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
 }
