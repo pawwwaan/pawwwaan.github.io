@@ -46,7 +46,7 @@ table td {
   text-align: left;
 }
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -94,4 +94,45 @@ section h2 {
   display: block;
   font-size: 18px;
   font-weight: bold;
+}
+.custom-button {
+  button {
+    display: inline-block;
+    width: 100%; /* Adjust if you want full-width or a smaller width */
+    padding: 10px 15px;
+    background-color: #007bff; /* Primary color */
+    color: #ffffff; /* White text */
+    font-size: 16px; /* Button text size */
+    font-weight: bold; /* Make the text bold */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+  }
+
+  button:active {
+    background-color: #004494; /* Even darker shade on click */
+    transform: scale(0.98); /* Slight compression on click */
+  }
+}
+.main-photo {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main-photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-photo em {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+  display: block;
 }

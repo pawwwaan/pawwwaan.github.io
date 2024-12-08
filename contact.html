@@ -26,23 +26,66 @@
       <section>
         <h2>Our Location</h2>
         <p>
-          Melbourne, Australia <br />
-          3004, Victoria
+          Helsinki,Finland <br />
+          00240, Pasila
         </p>
       </section>
       <div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093744!2d144.9537353155046!3d-37.81720974202198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2sVictoria!5e0!3m2!1sen!2sau!4v1600831744781!5m2!1sen!2sau"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100452.82566980878!2d24.9212949!3d60.1998697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46921317059b0535%3A0x3a06f8f52422d3d8!2sPasila%2C%20Helsinki%2C%20Finland!5e0!3m2!1sen!2sfi!4v1634251710900!5m2!1sen!2sfi"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+        
       </div>
     </main>
+    <section></section>
+  <h2>Send Us a Message</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" placeholder="Your Email Address" required /><br />
+
+    <label for="subject">Subject:</label><br />
+    <input type="text" id="subject" name="subject" placeholder="Subject of Your Message" /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br />
+
+    <button type="submit">Send Message</button>
+  </form>
+
+ 
+  <p id="confirmationMessage" style="display: none; color: green;">
+    Thank you for your message! We'll get back to you soon.
+  </p>
+</section>
+
+<script>
+ 
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    
+    document.getElementById('confirmationMessage').style.display = 'block';
+
+   
+    event.target.reset();
+  });
+</script>
     <footer>
       <p>&copy; 2024 Furniture Co. | All Rights Reserved.</p>
+      <p></p>
+        Follow us on:
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </p>
     </footer>
   </body>
 </html>
