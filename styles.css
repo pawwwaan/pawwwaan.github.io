@@ -59,7 +59,6 @@ section p {
   font-style: italic;
   color: #2c0404;
   text-size-adjust: none;
-  text-shadow: hsl(0, 84%, 24%);
 }
 section h2 {
   margin-top: 10px;
@@ -95,31 +94,7 @@ section h2 {
   font-size: 18px;
   font-weight: bold;
 }
-.custom-button {
-  button {
-    display: inline-block;
-    width: 100%; /* Adjust if you want full-width or a smaller width */
-    padding: 10px 15px;
-    background-color: #007bff; /* Primary color */
-    color: #ffffff; /* White text */
-    font-size: 16px; /* Button text size */
-    font-weight: bold; /* Make the text bold */
-    border: none; /* Remove borders */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
-  }
 
-  button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight scaling effect on hover */
-  }
-
-  button:active {
-    background-color: #004494; /* Even darker shade on click */
-    transform: scale(0.98); /* Slight compression on click */
-  }
-}
 .main-photo {
   text-align: center;
   margin-top: 30px;
@@ -135,4 +110,23 @@ section h2 {
   color: #555;
   margin-top: 10px;
   display: block;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
 }
